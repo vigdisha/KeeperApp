@@ -6,11 +6,13 @@ import CreateArea from "./createArea.jsx";
 
 function App() {
   const [notes, setNotes] = useState([]);
+//ADD NOTES
  function addNote(newNotes){
   setNotes(prevNotes =>{
     return[...prevNotes, newNotes]
   })
  }
+//DELETE NOTES
  function deleteNote(id){
   setNotes(prevNotes =>{
     return prevNotes.filter((noteItem, index)=>{
